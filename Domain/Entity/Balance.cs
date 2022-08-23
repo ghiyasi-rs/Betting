@@ -15,8 +15,8 @@ namespace Domain.Entity
                 CurrentBalance = 0;
         }
 
-        [Range(0, 9223372036854775807,
+        [Range(0, 2147483647,
         ErrorMessage = "Your minimum balance must be {1}")]
-        public long CurrentBalance { get; set; } 
+        public double CurrentBalance { get; set; } 
     }
 }
