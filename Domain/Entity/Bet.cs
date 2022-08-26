@@ -8,15 +8,13 @@ namespace Domain.Entity
 {
     public class Bet
     {
-        public Bet(int amount)
+        public Bet(double amount)
         {
             this.Award = Game(amount);
         }
         public double Award { get; set; }
-        public int Amount { get; set; }
 
-
-        public double Game(int amount)
+        public double Game(double amount)
         {
             Double awardPercent;
             Random randomChance = new Random();
